@@ -47,7 +47,7 @@ h3 {
 }
 
 .wrapper {
-    padding-inline: 2rem;
+  padding-inline: 2rem;
   max-width: 1280px;
   margin-inline: auto;
 }
@@ -58,20 +58,20 @@ h3 {
 
 header {
   text-align: center;
-  margin-block: 6rem;
+  margin-block: 3rem;
 }
 
 h1 {
-    font-size: var(--fs-900);
-    font-weight: var(--fw-light);
+  font-size: var(--fs-900);
+  font-weight: var(--fw-light);
 }
 
 h1 span {
-    font-weight: var(--fw-bold);
+  font-weight: var(--fw-bold);
 }
 
 header > p {
-    font-size: var(--fs-500);
+  font-size: var(--fs-500);
 }
 
 .layout-grid {
@@ -81,42 +81,40 @@ header > p {
   grid-auto-columns: 1fr;
 }
 
-@media (min-width: 800px){
-    .layout-grid {
-        grid-template-areas:
-        '...  two  ...'
-        'one  two  four'
-        'one three four'
-        '... three ...';
-    }
+@media (min-width: 800px) {
+  .layout-grid {
+    grid-template-areas:
+      "...  two  ..."
+      "one  two  four"
+      "one three four"
+      "... three ...";
+  }
 
-    .layout-grid > :nth-child(1){
-        grid-area: one;
-    }
-    
-    .layout-grid > :nth-child(2){
-        grid-area: two;
-    }
-    
-    .layout-grid > :nth-child(3){
-        grid-area: three;
-    }
-    
-    .layout-grid > :nth-child(4){
-        grid-area: four;
-    }
+  .layout-grid > :nth-child(1) {
+    grid-area: one;
+  }
 
-    .attribution {
-        padding-block-start: 5rem;
-        padding-left: 1rem;
-      }
-    
+  .layout-grid > :nth-child(2) {
+    grid-area: two;
+  }
+
+  .layout-grid > :nth-child(3) {
+    grid-area: three;
+  }
+
+  .layout-grid > :nth-child(4) {
+    grid-area: four;
+  }
+
+  .attribution {
+    margin-top: 5rem;
+    padding-left: 1rem;
+  }
 }
 
 .layout-grid > * {
   flex: 1;
 }
-
 
 .card {
   --br: 0.325rem;
@@ -128,14 +126,14 @@ header > p {
 }
 
 .card__title {
-    font-size: var(--fs-600);
-    margin: 0;
+  font-size: var(--fs-600);
+  margin: 0;
 }
 
 .card__img {
-    display: block;
-    margin-top: 2rem;
-    margin-left: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
 }
 
 .border-teal {
@@ -155,7 +153,7 @@ header > p {
 }
 
 .attribution {
-    text-align: center;
+  text-align: center;
   padding-block-start: 1rem;
   padding-inline: 3rem;
 }
